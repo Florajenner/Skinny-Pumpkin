@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skinny Pumpkin Media</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Custom Styles for Moody Aesthetic */
+    body {
+      font-family: 'Montserrat', sans-serif;
+      color: #e0e0e0;
+      background-color: #1a1a1a;
+    }
+
+    .navbar {
+      background-color: #222;
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      color: #e07a5f;
+    }
+
+    .navbar-nav .nav-link {
+      color: #e0e0e0;
+    }
+
+    /* Hero Section with Dark Overlay */
+    #hero {
+      position: relative;
+      background: url('https://images.pexels.com/photos/27774179/pexels-photo-27774179/free-photo-of-a-plate-of-food-with-vegetables-and-meat-on-it.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') no-repeat center center;
+      background-size: cover;
+      height: 100vh;
+      color: #f4f4f4;
+      text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+      z-index: 1;
+    }
+
+    #hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+      z-index: -1;
+    }
+
+    #services {
+      background-color: #2b2b2b;
+      color: #e0e0e0;
+    }
+
+    #services h3 {
+      color: #e07a5f;
+    }
+
+    #services .description {
+      min-height: 120px;
+    }
+
+    /* About Section */
+    #about img {
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+      opacity: 0.9;
+      width: 80%; /* Smaller width for better alignment with text */
+      margin-bottom: 20px; /* Add some space under the image */
+    }
+
+    #about {
+      background-color: #1a1a1a;
+      color: #f4f4f4;
+    }
+
+    footer {
+      background-color: #222;
+      color: #e0e0e0;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    .btn-primary {
+      background-color: #e07a5f;
+      border-color: #e07a5f;
+    }
+
+    .btn-primary:hover {
+      background-color: #b9573f;
+      border-color: #b9573f;
+    }
+
+    /* Contact Info Styles */
+    #contact-info {
+      color: #f4f4f4;
+      font-size: 1.2rem;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    #contact-info a {
+      color: #e07a5f;
+      text-decoration: none;
+    }
+
+    #contact-info a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">Skinny Pumpkin Media</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="d-flex justify-content-center align-items-center text-center">
+    <div class="container">
+      <h1>Skinny Pumpkin Media</h1>
+      <p>Complete Social Media Management for High-End Restaurants</p>
+      <a href="#services" class="btn btn-primary btn-lg mt-3">Our Services</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Our Services</h2>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <div class="icon mb-3"><i class="bi bi-camera" style="font-size: 2rem;"></i></div>
+          <h3>Content Creation</h3>
+          <p class="description">Stunning photos, videos, and creative assets tailored for high-end restaurants.</p>
+          <img src="https://images.pexels.com/photos/8389882/pexels-photo-8389882.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Content Creation" class="img-fluid">
+        </div>
+        <div class="col-md-4">
+          <div class="icon mb-3"><i class="bi bi-brush" style="font-size: 2rem;"></i></div>
+          <h3>Brand Strategy</h3>
+          <p class="description">We help position your brand in the luxury dining industry with effective social media strategies.</p>
+          <img src="https://images.pexels.com/photos/4457125/pexels-photo-4457125.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Brand Strategy" class="img-fluid">
+        </div>
+        <div class="col-md-4">
+          <div class="icon mb-3"><i class="bi bi-graph-up-arrow" style="font-size: 2rem;"></i></div>
+          <h3>Growth Management</h3>
+          <p class="description">We build your audience and increase engagement with carefully curated content and active management.</p>
+          <img src="https://images.pexels.com/photos/3296547/pexels-photo-3296547.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Growth Management" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">About Us</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <img src="https://images.pexels.com/photos/15104799/pexels-photo-15104799/free-photo-of-a-man-taking-a-picture.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Indy, Business Owner" class="img-fluid rounded">
+        </div>
+        <div class="col-md-6">
+          <h3>Indy, Founder of Skinny Pumpkin Media</h3>
+          <p>
+            With years of experience as a pastry chef in Michelin-starred restaurants, Indy knows what it takes to showcase high-end culinary art. Now, she channels her creativity into building brands for luxury restaurants through Skinny Pumpkin Media. Our team specializes in crafting content and managing social media for fine dining establishments, helping them stand out in the competitive hospitality market.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Contact Us</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <form action="https://formspree.io/f/mjkblwew" method="POST">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </div>
+          </form>
+
+          <!-- Contact Information -->
+          <div id="contact-info" class="mt-4">
+            <p><strong>Phone:</strong> 07805562986</p>
+            <p><strong>Email:</strong> <a href="mailto:indy@skinnypumpkinmedia.com">indy@skinnypumpkinmedia.com</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-4">
+    <div class="container">
+      <p>&copy; 2024 Skinny Pumpkin Media. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
